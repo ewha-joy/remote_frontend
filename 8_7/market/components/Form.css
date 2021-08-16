@@ -1,0 +1,33 @@
+.login-form-button {
+    width: 100%;
+    color: #fff;
+    background-color: #025C30;
+    border-color: #025C30;
+}
+
+.login-container {
+    max-width: 420px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: "Nanum Gothic";
+}
+
+.MuiTab-wrapper {
+    /* color: #000000; */
+    font-family: "Nanum Gothic";
+    font-size: medium
+}
+
+.label{
+    margin-bottom:10px;
+    font-family: "Nanum Gothic";
+    font-weight:bold;
+    color:rgb(20, 20, 20);
+}
+
+.message{
+    margin-top:7px;
+    font-family: "Nanum Gothic";
+    color:rgb(87, 83, 83);
+}
+

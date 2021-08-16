@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+.cash_charge{
+    position:center;
+    top:16%;
+    right:15%;
+    text-align: center;
+}
+
+.cash_form{
+    width : 100px;
+    height: 50px;
+    resize:none;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.password__show {
+    right: 8px;
+    z-index: 2;
+}
+.box1 {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+.box2 {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.main-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    gap: 1000px; /* ?먯떇?붿냼媛꾩쓽 媛꾧꺽 */
+}
+body{
+    padding: 0;
+    margin: 0;
+  }
+  div{
+    box-sizing: border-box;
+  }
+  
+  /* alert badge */
+  .circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #ff0000;
+    position: absolute;
+    top: -5px;
+    left: 110%;
+  }
+  
+  /* ?뱀깋 ?띿뒪??*/
+  .green{
+    color: #24855b;
+  }
+  
+  .wrap{
+    background-color: #F8F8F8;  
+  }
+  /* ?뱀깋諛곌꼍 */
+  .greenContainer{  
+    height: 7px;
+    background-color: #b2beb9;    
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+  }
+  
+  .greenContainer .name{
+     font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  } 
+  .greenContainer .modify{
+    margin-left: auto;
+  }
+  
+  /* ?④낏?곸젏 , ?곹뭹?꾧린 , ?곷┰湲?諛뺤뒪 */
+  .summaryContainer{
+    background-color: white;  
+    display: flex;  
+    padding: 21px 16px;  
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  /* ?④낏?곸젏 , ?곹뭹?꾧린 , ?곷┰湲?*/
+  .summaryContainer .item{
+    flex-grow: 1
+  }
+  /* ?뱀깋 ?レ옄 */
+  .summaryContainer .number{
+    font-size: 19px;
+    font-weight: bold;
+    color: #24855b;
+  }
+  /* ?띿뒪??*/
+  .summaryContainer .item > div:nth-child(2){
+    font-size: 13px;
+  }
+  
+  /* ================== 二쇰Ц/諛곗넚議고쉶 諛뺤뒪 ?쒖옉 ==================== */
+  .shippingStatusContainer{
+    padding: 21px 16px;
+    background-color: white;
+    margin-bottom: 10px;
+    height:200px;
+  }
+  
+  /* 二쇰Ц/諛곗넚議고쉶 ??댄? */
+  .shippingStatusContainer .title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* ?λ컮援щ땲 寃곗젣?꾨즺 諛곗넚以?援щℓ?뺤젙 [濡쒖슦] */
+  .shippingStatusContainer .status{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+  /* ?λ컮援щ땲 寃곗젣?꾨즺 諛곗넚以?援щℓ?뺤젙 [?꾩씠??  */
+  .shippingStatusContainer .item{
+    flex-grow: 1
+  }
+  
+  .shippingStatusContainer .number{
+    font-size: 31px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .shippingStatusContainer .text{
+    font-size: 15px;
+    font-weight: normal;
+    color: #c2c2c2;
+    text-align: center;
+  }
+  .shippingStatusContainer .icon{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  /*=================== 二쇰Ц紐⑸줉 ~ 李쒗븳?곹뭹 由ъ뒪??==================*/
+  .listContainer{  
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+  }
+  .listContainer .item{  
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    color: black;
+    text-decoration: none;  
+    height: 56px;
+    box-sizing: border-box;
+  }
+  .listContainer .icon{  
+    margin-right: 14px;
+  }
+  .listContainer .text{
+    font-size: 16px;
+    position: relative;
+    flex-grow: 1;
+    text-align:left;
+    margin-left:50px;
+  }
+  .listContainer .right1{
+    margin-left: 50px;
+    text-decoration: line-through;
+    color: #8d8d8d;
+  }
+
+  .listContainer .right2{
+    margin-left: 60px;
+  }
+  
+  
+  /*=================== ?댁?媛묒쓽 蹂댁쑀 ?곷┰湲??ㅼ뼱媛??遺遺?================*/
+  .listContainer .smallLight{
+    font-size: 14px;
+    color: #c2c2c2;  
+  }
+  .listContainer .smallLight > span{
+    margin-left: 10px;
+  }
+  
+  .listContainer .right .blct{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  
+  
+  /* 怨듭??ы빆 ?댁슜?덈궡 怨좉컼?쇳꽣 */
+  .infoContainer{
+    background-color: white; 
+    display: flex;
+    height: 100px;
+    margin-bottom: 10px;    
+  }
+  
+  .infoContainer .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+  }
+  .infoContainer .item > div:first-child{
+    margin-bottom: 2px;
+  }
+  
+  
+  
+  /*  */
+  .listContainer .item:hover{
+  /*   background-color: #f8f8f8; */
+  }
+  .infoContainer .item:hover{
+  /*   background-color: #f8f8f8; */
+  }

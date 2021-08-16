@@ -1,0 +1,19 @@
+@charset "utf-8";
+.Logout{
+    text-align: right;
+    margin:10px;
+}
+.wrap{
+    align-items: center;
+}
+
+
+.AllTokenContainer {
+    display: flex;
+    width: 1400px;
+    align-items:'center'; 
+    /* width: 200%;  */
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

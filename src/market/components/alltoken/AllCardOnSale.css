@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.AllCardOnSale {
+    width: 650px;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .12);
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 15px;
+}

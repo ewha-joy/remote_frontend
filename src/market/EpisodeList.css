@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.wrap_episode {
+    margin: auto;
+    font-family: "Nanum Gothic";
+    width: 1000px;
+    height: 100%;
+}
+
+.img_episode {
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+
+.epi_img {
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+
+.list_episode {
+    list-style: none;
+}
+
+.info_episode {
+    position: relative;
+    float: left;
+    height: 300px;
+    width: 500px;
+    padding: 100px;
+}
+
+.tit_episode {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.date_episode {
+    float: right;
+    padding-right: 220px;
+    margin-top: 15px;
+    color: black;
+}
+
+.counter {
+    width: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
