@@ -189,7 +189,7 @@ class TokenRecommend2 extends Component {
                     {this.state.epiTitle}
                </div>
                 <div className='image'>
-                    <img src={this.state.src} height='180' width='200' ></img>
+                    <img src={this.state.src} style={{objectFit:'cover', height:180, width:300}} ></img>
                 </div>
       
                 {this.state.open ? <ExpandLess /> : <ExpandMore />}

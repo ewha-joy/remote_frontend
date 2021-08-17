@@ -1,4 +1,4 @@
-import { CardActions, CardContent, CardHeader, Button } from '@material-ui/core';
+import { CardActions, CardContent, CardHeader, Button, Typography } from '@material-ui/core';
 import React from 'react';
 import { Component } from 'react';
 import { Spin, Icon } from 'antd';
@@ -273,19 +273,21 @@ class Card extends Component {
         <div className="card-container">
           <CardHeader>{tokenID}</CardHeader>
           <img src={this.state.src}
-            height='180' width='200' title={title}></img>
-          <CardContent>
-            title: {title}
-            <br></br>
-            episode: {episode}
-            <br></br>
-            author: {author}
-            <br></br>
-            dateCreated: {dateCreated}
-            <br></br>
-            serial#: {order}
-            <br></br>
-          </CardContent>
+            style={{objectFit:'cover', width:'85%', height: 180, marginLeft:22.5}}  title={title}></img>
+            <CardContent>
+          <Typography variant="body1" component="p">
+              title: {title}
+              <br></br>
+              episode: {episode}
+              <br></br>
+              author: {author}
+              <br></br>
+              dateCreated: {dateCreated}
+              <br></br>
+              serial#: {order}
+              <br></br>
+          </Typography>
+            </CardContent>
           <CardActions style={{ justifyContent: 'flex-end' }}>
             <Button
               variant="contained"
@@ -303,22 +305,25 @@ class Card extends Component {
         return (
           <div className="card-container">
             <CardHeader>{tokenID}</CardHeader>
-            <img src={this.state.src} height='180' width='200' title={title}></img>
+            <img src={this.state.src} 
+            style={{objectFit:'cover', width:'85%', height: 180, marginLeft:22.5}} 
+            title={title}></img>
             <CardContent>
-              <Spin spinning={this.state.isLoading == true} indicator={antIcon}>
-                title: {title}
-                <br></br>
-                episode: {episode}
-                <br></br>
-                author: {author}
-                <br></br>
-                dateCreated: {dateCreated}
-                <br></br>
-                serial#: {order}
-                <br></br>
-                price: {this.state.price}
-                <br></br>
-              </Spin>
+              <Typography variant="body1" component="p">
+                <Spin spinning={this.state.isLoading == true} indicator={antIcon}>
+                  title: {title}
+                  <br></br>
+                  episode: {episode}
+                  <br></br>
+                  author: {author}
+                  <br></br>
+                  dateCreated: {dateCreated}
+                  <br></br>
+                  serial#: {order}
+                  <br></br>
+                  price: {this.state.price}
+                  <br></br>
+                </Spin>
               <CardActions style={{ justifyContent: 'flex-end' }}>
                 <Button
                   variant="contained"
@@ -328,6 +333,8 @@ class Card extends Component {
                   판매 취소
                 </Button>
               </CardActions>
+              
+              </Typography>
             </CardContent>
           </div>
         )
@@ -338,8 +345,9 @@ class Card extends Component {
 
           <div className="card-container">
             <CardHeader>{tokenID}</CardHeader>
-            <img src={this.state.src} height='180' width='200' title={title}></img>
+            <img src={this.state.src} style={{objectFit:'cover', width:'85%', height: 180, marginLeft:22.5}}  title={title}></img>
             <CardContent>
+            <Typography variant="body1" component="p">
               <Spin spinning={this.state.isLoading == true} indicator={antIcon}>
                 title: {title}
                 <br></br>
@@ -380,6 +388,7 @@ class Card extends Component {
                 </Button>
 
               </CardActions>
+              </Typography>
             </CardContent>
 
 

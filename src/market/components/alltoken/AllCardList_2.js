@@ -187,7 +187,7 @@ class AllCardList_2 extends Component {
             {this.state.epiTitle}
           </div>
           <div className='image'>
-            <img src={this.state.src} height='180' width='200' ></img>
+            <img classNmae='img' style={{objectFit:'cover', height:180, width:300}} src={this.state.src} ></img>
           </div>
 
           {this.state.open ? <ExpandLess /> : <ExpandMore />}

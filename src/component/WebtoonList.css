@@ -12,6 +12,7 @@
     width:200px;
     height:130px;
     margin:15px;
+    object-fit: cover;
 }
 
 .list_webtoon{

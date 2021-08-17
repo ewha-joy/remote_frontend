@@ -76,6 +76,7 @@ class App extends Component {
           username : null
         }
         this.handleLogout = this.handleLogout.bind(this);
+        this.handleLogout2 = this.handleLogout2.bind(this);
         this.loadCurrentUser = this.loadCurrentUser.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
         this.handleLogin2 = this.handleLogin2.bind(this);
@@ -139,7 +140,27 @@ class App extends Component {
         this.loadCurrentUser();
       }
     
-      handleLogout(redirectTo="/", notificationType="success", description="로그아웃 되었습니다. 거래소도 자동 로그아웃됩니다") {
+      handleLogout(redirectTo="/", notificationType="success", description="로그아웃 되었습니다.") {
+        localStorage.removeItem(ACCESS_TOKEN);
+    
+        this.setState({
+          currentUser: null,
+          isAuthenticated: false,
+          role:null,
+          username: null
+        });
+    
+        this.props.history.push(redirectTo);
+        
+        this.handleTansactionLogout();
+
+        notification[notificationType]({
+          message: 'JOY Toon',
+          description: description,
+        });
+      }
+
+      handleLogout2(redirectTo="/market", notificationType="success", description="로그아웃 되었습니다.") {
         localStorage.removeItem(ACCESS_TOKEN);
     
         this.setState({
@@ -205,7 +226,7 @@ class App extends Component {
                     onLogout={this.handleLogout} role={this.state.role}/>
                 <AppHeader2 isAuthenticated={this.state.isAuthenticated} 
                     currentUser={this.state.currentUser} 
-                    onLogout={this.handleLogout} role={this.state.role} isLoggedIn={isLoggedIn}/>
+                    onLogout={this.handleLogout2} role={this.state.role} isLoggedIn={isLoggedIn}/>
 
             <Content className="app-content">
                 <div className="container">
