@@ -38,7 +38,7 @@ class SaleCard extends Component {
 
         <div className="card-container">
           <CardHeader>{tokenId}</CardHeader>
-          <img src={this.state.src}  height='180' width='200' title={title}></img>
+          <img src={this.state.src} style={{objectFit:'cover', width:'85%', height: 180, marginLeft:22.5}} title={title}></img>
           <CardContent>
             title: {title}
             <br></br>
