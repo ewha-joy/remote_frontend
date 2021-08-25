@@ -39,7 +39,7 @@ class TokenList extends Component {
         "content-type": "application/json",
       },
       body: JSON.stringify({
-        startDate: this.toStringByFormatting(-7), //현재 - 7일
+        startDate: this.toStringByFormatting(-14), //현재 - 7일
         endDate: this.toStringByFormatting(1)     //현재 + 1일 => 전일 거래량 조회
       }),
     }).then((res) => {
